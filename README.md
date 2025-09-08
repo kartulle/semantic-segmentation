@@ -16,7 +16,6 @@ App Android que faz **segmentação semântica** (gato/cão) em imagens escolhid
 ## 🔧 Requisitos
 
 - Android Studio com **JDK 17**
-- `compileSdk = 36` (ou 35, se preferir)
 - API mínima 24 (Android 7.0)
 - Dispositivo físico recomendado para melhor desempenho
 
@@ -25,10 +24,9 @@ App Android que faz **segmentação semântica** (gato/cão) em imagens escolhid
 ## O que vem no app
 
 - **Entrada:** imagem redimensionada para `256×256`, normalizada (`0..1`)
-- **Inferência:** TensorFlow Lite **FP32** (CPU, 2–4 threads)
+- **Inferência:** TensorFlow Lite **FP32**
 - **Pós-processamento:** `sigmoid(logit)` + **threshold = 0.5**  
-  (padrão por BCEWithLogits; pode ser ajustado no código)
-- **Exibição:** overlay **vermelho (alpha=160)** sobre a imagem original
+- **Exibição:** overlay **vermelho** sobre a imagem original
 
 ---
 
