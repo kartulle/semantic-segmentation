@@ -32,7 +32,7 @@ App Android que faz **segmentação semântica** (gato/cão) em imagens escolhid
 
 ---
 
-## 📁 Estrutura essencial
+## Estrutura essencial
 
 - `MainActivity.kt` – fluxo de UI (seleção da imagem, botão **Predict**)  
 - `SegmentationInterpreter.kt` – wrapper do **Interpreter** TFLite  
